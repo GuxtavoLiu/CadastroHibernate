@@ -16,6 +16,7 @@ public class ProdutoMB {
 	private List<Produto> produtos = new ArrayList<>();
 	private DAOProduto daoProduto = new DAOProduto();
 
+	// ↓↓↓↓↓↓↓↓↓ usado para buscar e apresentar na table os dados que estão no banco de dados
 	public ProdutoMB() {
 		produtos = daoProduto.buscarTodos();
 	}
